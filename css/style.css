@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  animation: slideInDown 1s ease-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #4CAF50;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+section p, section ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.job, .volunteer {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Section Backgrounds */
+.education {
+  background-color: #e1f5fe;
+}
+
+.skills {
+  background-color: #fff9c4;
+}
+
+.experience {
+  background-color: #ffecb3;
+}
+
+.projects {
+  background-color: #c8e6c9;
+}
+
+.certificates {
+  background-color: #d1c4e9;
+}
+
+.volunteering {
+  background-color: #ffcdd2;
+}
+
+.publications {
+  background-color: #ffe0b2;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Links */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+  }
+
+  section h3 {
+    font-size: 1.25rem;
+  }
+}
